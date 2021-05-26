@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import './Reservation.css';
 
 const Reservation = ({reservations}) => {
 
@@ -17,7 +18,7 @@ const Reservation = ({reservations}) => {
   })
 
   return (
-    <div>
+    <div className='reservation-container'>
       {reservationCards}
     </div>
   )
