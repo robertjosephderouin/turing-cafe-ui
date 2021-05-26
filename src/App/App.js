@@ -21,7 +21,7 @@ class App extends Component {
     .catch(() => this.setState({ error: 'Something went wrong'}))
 }
 
-  addReservation(newReservation) {
+  addReservation = (newReservation) => {
     this.setState({ reservations: [...this.state.reservations, newReservation] });
   }
 
