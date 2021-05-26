@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from './Form';
 import Reservation from './Reservation';
 import './App.css';
 import { getReservations } from './apiCalls';
@@ -20,48 +21,16 @@ class App extends Component {
     .catch(() => this.setState({ error: 'Something went wrong'}))
 }
 
+  addReservation(newReservation) {
+    this.setState({ reservations: [...this.state.reservations, newReservation] });
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-          <form>
-
-            <input className='inputs'
-              type='text'
-              placeholder='Name'
-              name='name'
-              value={this.state.name}
-              onChange={event => this.handleChange(event)}
-            />
-
-            <input className='inputs'
-              type='text'
-              placeholder='Date'
-              name='date'
-              value={this.state.date}
-              onChange={event => this.handleChange(event)}
-            />
-
-            <input className='inputs'
-              type='text'
-              placeholder='Time'
-              name='time'
-              value={this.state.time}
-              onChange={event => this.handleChange(event)}
-            />
-
-            <input className='inputs'
-              type='text'
-              placeholder='number'
-              name='number'
-              value={this.state.number}
-              onChange={event => this.handleChange(event)}
-            />
-
-            <button  className='inputs'>SUBMIT</button>
-
-          </form>
+          <Form addReservation={this.addReservation} />
         </div>
         <div className='resy-container'>
           <Reservation reservations={this.state.reservations} />
