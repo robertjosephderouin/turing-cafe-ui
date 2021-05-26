@@ -1,5 +1,8 @@
 .card {
-  min-width: 13vw;
+  min-width: 15vw;
+  max-width: 15vw;
+  min-height: 18vw;
+  max-height: 18vw;
   margin: 10px;
   box-sizing: border-box;
   background-color: white;

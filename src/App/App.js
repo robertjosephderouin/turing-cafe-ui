@@ -16,9 +16,9 @@ class App extends Component {
   componentDidMount = () => {
   getReservations()
     .then(data => {
-      this.setState({ reservations: data })
+      this.setState({ reservations: data });
     })
-    .catch(() => this.setState({ error: 'Something went wrong'}))
+    .catch(() => this.setState({ error: 'Something went wrong'}));
 }
 
   addReservation = (newReservation) => {

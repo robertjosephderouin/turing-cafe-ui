@@ -1,0 +1,9 @@
+.inputs {
+  border-color: teal;
+  margin: 5px;
+}
+
+button {
+  color: white;
+  background-color: teal;
+}
