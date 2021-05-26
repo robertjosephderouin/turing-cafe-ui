@@ -10,10 +10,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
 }
 
 .app-title {
   color: teal;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
+}
+
+.inputs {
+  margin: 5px;
 }

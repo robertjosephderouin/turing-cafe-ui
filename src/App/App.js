@@ -27,7 +27,7 @@ class App extends Component {
         <div className='resy-form'>
           <form>
 
-            <input
+            <input className='inputs'
               type='text'
               placeholder='Name'
               name='name'
@@ -35,7 +35,7 @@ class App extends Component {
               onChange={event => this.handleChange(event)}
             />
 
-            <input
+            <input className='inputs'
               type='text'
               placeholder='Date'
               name='date'
@@ -43,7 +43,7 @@ class App extends Component {
               onChange={event => this.handleChange(event)}
             />
 
-            <input
+            <input className='inputs'
               type='text'
               placeholder='Time'
               name='time'
@@ -51,7 +51,7 @@ class App extends Component {
               onChange={event => this.handleChange(event)}
             />
 
-            <input
+            <input className='inputs'
               type='text'
               placeholder='number'
               name='number'
@@ -59,8 +59,8 @@ class App extends Component {
               onChange={event => this.handleChange(event)}
             />
 
-            <button>SUBMIT</button>
-            
+            <button  className='inputs'>SUBMIT</button>
+
           </form>
         </div>
         <div className='resy-container'>
